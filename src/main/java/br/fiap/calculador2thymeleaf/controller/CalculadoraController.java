@@ -16,7 +16,7 @@ public class CalculadoraController {
         this.service = service;
     }
     @GetMapping("calcular")
-    public double calcular(int a, int b, String operacao, Model model){
+    public String calcular(int a, int b, String operacao, Model model){
         model.addAttribute("a", a);
         model.addAttribute("b", b);
         model.addAttribute("operacao", operacao);
@@ -28,5 +28,7 @@ public class CalculadoraController {
             model.addAttribute("erro", e.getMessage());
         }
 
+        return "index";
+        //puxa a pagina html
     }
 }
