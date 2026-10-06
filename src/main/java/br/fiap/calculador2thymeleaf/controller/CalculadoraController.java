@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
+//retorna página não dados
 @RequestMapping("calculadora")
 public class CalculadoraController {
 
